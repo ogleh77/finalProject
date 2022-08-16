@@ -1,0 +1,12 @@
+.btn {
+    -fx-background-color: dodgerblue;
+    -fx-font-family: "Roboto Light";
+    -fx-font-size: 14;
+}
+
+.parent {
+    -fx-background-image: url('images/A-Beginners-Guide-to-Building-Muscle-at-the-Gym.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 980 617;
+    -fx-background-position: center center;
+}

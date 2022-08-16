@@ -1,0 +1,33 @@
+.dashboard-pane {
+    -fx-pref-height: 670;
+    -fx-pref-width: 1057;
+}
+.top{
+    -fx-background-color: #132332;
+    -fx-pref-height: 44;
+}
+.header{
+    -fx-background-color: red;
+
+}
+.gym-title{
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+}
+.menu-hove:hover{
+    -fx-background-color: dodgerblue;
+    -fx-cursor: hand;
+}
+.side-pane{
+    -fx-background-color: #132332;
+}
+.menu-btns{
+    -fx-background-color:#042B48 ;
+}
+.menu-btns:hover{
+    -fx-background-color:#76A6F0 ;
+    -fx-cursor: hand;
+    -fx-background-radius: 10;
+
+}

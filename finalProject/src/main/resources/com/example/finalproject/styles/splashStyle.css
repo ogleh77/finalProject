@@ -1,0 +1,27 @@
+.splashScreenPane{
+    -fx-background-color: #132332;
+    -fx-pref-height: 648;
+    -fx-pref-width: 980;
+}
+.userName{
+    -fx-text-fill: white;
+    -fx-font-family: "Roboto Thin";
+    -fx-font-size: 20;
+}
+.btnSwipe{
+    -fx-background-color: #17324D;
+    -fx-font-size: 18;
+    -fx-font-family: "Roboto Light";
+    -fx-pref-width: 270;
+    -fx-pref-height: 40;
+    -fx-text-fill: white;
+}
+.btnCancel{
+    -fx-background-color: red;
+    -fx-font-size: 18;
+    -fx-font-family: "Roboto Light";
+    -fx-pref-width: 200;
+    -fx-pref-height: 40;
+    -fx-text-fill: white;
+}
+

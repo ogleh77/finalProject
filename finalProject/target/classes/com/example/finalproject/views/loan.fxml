@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="420.0" prefWidth="600.0" style="-fx-background-color: white;" stylesheets="@../styles/regStyle.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.controllers.LoanController">
+   <children>
+      <ComboBox fx:id="userCombo" layoutX="188.0" layoutY="88.0" onAction="#choosedCombo" prefHeight="36.0" prefWidth="224.0" promptText="Choose taker name" style="-fx-background-color: #132332;" />
+      <TextField fx:id="giverName" editable="false" layoutX="76.0" layoutY="160.0" prefHeight="36.0" prefWidth="224.0" promptText="Giver name" />
+      <TextField fx:id="takerName" editable="false" layoutX="326.0" layoutY="160.0" prefHeight="36.0" prefWidth="224.0" promptText="Taker name" />
+      <JFXButton layoutX="231.0" layoutY="358.0" prefHeight="36.0" prefWidth="205.0" style="-fx-background-color: #132332;" text="Submit" textFill="#fff6f6">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></JFXButton>
+      <HBox alignment="CENTER_RIGHT" layoutY="-2.0" prefHeight="29.0" prefWidth="600.0" spacing="470.0" style="-fx-background-color: #042B48;">
+         <children>
+            <Label text="Loan From" textFill="#dad7d7">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_circled_x_24px_1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <Separator layoutX="31.0" layoutY="143.0" prefHeight="0.0" prefWidth="567.0" />
+      <ComboBox fx:id="sentByCombo" layoutX="76.0" layoutY="223.0" prefHeight="36.0" prefWidth="224.0" promptText="sentBy" style="-fx-background-color: #132332;" />
+      <Label layoutX="23.0" layoutY="57.0" text="Choose from the combo if the loan taker is a gym member" textFill="#5b5757">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sentNumber" editable="false" layoutX="326.0" layoutY="223.0" prefHeight="36.0" prefWidth="224.0" promptText="sent number" />
+      <JFXCheckBox layoutX="127.0" layoutY="298.0" text="Cash" />
+      <TextField fx:id="amount" editable="false" layoutX="214.0" layoutY="288.0" prefHeight="36.0" prefWidth="224.0" promptText="\$amount" />
+   </children>
+   <effect>
+      <DropShadow height="32.72" radius="15.0075" width="29.31">
+         <color>
+            <Color red="0.3947368562221527" green="0.2156432718038559" blue="0.2156432718038559" />
+         </color>
+      </DropShadow>
+   </effect>
+</AnchorPane>

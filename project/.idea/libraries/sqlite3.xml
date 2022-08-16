@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sqlite3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/sqlite-dll-win32-x86-3380500.zip!/sqlite3.dll" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

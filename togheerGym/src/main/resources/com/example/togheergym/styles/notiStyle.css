@@ -1,0 +1,14 @@
+.notiPane {
+    -fx-pref-height: 626;
+    -fx-pref-width: 980;
+    -fx-background-image: url('../images/bgImage.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 980 626;
+    -fx-background-position: center center;
+}
+.topPane{
+    -fx-background-color: black;
+    -fx-pref-height: 626;
+    -fx-pref-width: 980;
+    -fx-opacity: 0.75;
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="584.0" prefWidth="980.0" styleClass="homePane" stylesheets="@homeStyle.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfx.controllers.HomeController">
+   <children>
+      <AnchorPane opacity="0.75" prefHeight="584.0" prefWidth="980.0" style="-fx-background-color: black;">
+         <children>
+            <JFXButton layoutX="38.0" layoutY="27.0" onAction="#backtoHomeHandler" prefHeight="36.0" prefWidth="109.0" style="-fx-background-color: #03fcb9;" text="Back to home">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </JFXButton>
+            <TableView layoutY="384.0" prefHeight="200.0" prefWidth="980.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <TextField fx:id="firstname" layoutX="627.0" layoutY="336.0" prefHeight="36.0" prefWidth="236.0" promptText="Saerch" />
+            <MenuButton layoutX="867.0" layoutY="336.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="92.0" style="-fx-background-color: #03fcb9;" text="Filter by">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </MenuButton>
+            <Circle fill="#03fcb9" layoutX="775.0" layoutY="43.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="813.0" layoutY="31.0" text="Mohamed Ogleh" textFill="#03fcb9">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

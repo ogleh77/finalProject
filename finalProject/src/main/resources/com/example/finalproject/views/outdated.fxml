@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="414.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.controllers.OutatedController">
+   <children>
+      <Circle fx:id="outImage" fill="DODGERBLUE" radius="26.0" stroke="BLACK" strokeType="INSIDE">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+      </Circle>
+      <VBox alignment="CENTER_LEFT" maxWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Label fx:id="username" text="Mohamed Ogleh">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" text="13/2/2022 08:00" textFill="#6f6a6a" />
+         </children>
+         <HBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </HBox.margin>
+      </VBox>
+      <JFXButton onAction="#renewHandler" prefHeight="39.0" prefWidth="119.0" style="-fx-background-color: #132332;" text="Description" textFill="#e8dada">
+         <HBox.margin>
+            <Insets right="40.0" />
+         </HBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</HBox>

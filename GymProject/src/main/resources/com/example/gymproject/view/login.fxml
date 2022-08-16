@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="434.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gymproject.controllers.LoginController">
+   <children>
+      <ComboBox fx:id="username" layoutX="186.0" layoutY="139.0" prefHeight="35.0" prefWidth="242.0" promptText="choose username" />
+      <PasswordField fx:id="password" layoutX="186.0" layoutY="205.0" prefHeight="35.0" prefWidth="242.0" promptText="password" />
+      <Button layoutX="302.0" layoutY="261.0" mnemonicParsing="false" onAction="#loginHandler" prefHeight="35.0" prefWidth="126.0" text="Login">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="regPane" prefHeight="584.0" prefWidth="980.0" styleClass="regPane" stylesheets="@../registrations/regStyle.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfx.controllers.paymentController">
+   <children>
+      <AnchorPane layoutX="-1.0" opacity="0.75" prefHeight="584.0" prefWidth="980.0" style="-fx-background-color: black;">
+         <children>
+            <TextField fx:id="phone" layoutX="139.0" layoutY="181.0" prefHeight="36.0" prefWidth="284.0" promptText="Enter phone number" />
+            <Label layoutX="139.0" layoutY="157.0" text="phone" textFill="#9e9898">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="discount" disable="true" layoutX="139.0" layoutY="256.0" prefHeight="36.0" prefWidth="140.0" promptText="amount" />
+            <Label layoutX="139.0" layoutY="230.0" text="discouunt" textFill="#9e9898">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXCheckBox fx:id="yes_discount" checkedColor="#03fcb9" layoutX="303.0" layoutY="262.0" text="make a discount" textFill="#2eb5cd" unCheckedColor="#978d8d">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXCheckBox>
+            <ComboBox fx:id="shift" layoutX="137.0" layoutY="329.0" prefHeight="34.0" prefWidth="284.0" promptText="choose shift" />
+            <Label layoutX="137.0" layoutY="304.0" text="Shift" textFill="#9e9898">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="weight" layoutX="138.0" layoutY="411.0" prefHeight="36.0" prefWidth="168.0" promptText="initial weight" />
+            <Label layoutX="138.0" layoutY="383.0" text="weight" textFill="#9e9898">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="weight_type" layoutX="323.0" layoutY="411.0" prefHeight="34.0" prefWidth="100.0" promptText="KG" />
+            <JFXCheckBox fx:id="poxing" checkedColor="#03fcb9" layoutX="144.0" layoutY="480.0" text="Poxing" textFill="#2eb5cd" unCheckedColor="#978d8d">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXButton buttonType="RAISED" layoutX="635.0" layoutY="453.0" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #4197EB;" text="Change image" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="548.0" layoutY="512.0" maxHeight="40.0" maxWidth="170.0" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #03fcb9;" text="Update">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="clear" buttonType="RAISED" layoutX="734.0" layoutY="512.0" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: red;" text="Clear " textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="47.0" layoutY="524.0" prefHeight="24.0" prefWidth="162.0" text="Payments Form" textFill="#06ffe6">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="30.0" layoutY="21.0" onAction="#backtoHomeHandler" prefHeight="36.0" prefWidth="109.0" style="-fx-background-color: #03fcb9;" text="Back to home">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="47.0" layoutY="546.0" prefHeight="24.0" prefWidth="330.0" text="Change information of the costumer if something goes wrong" textFill="#06ffe6">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="firstname" layoutX="136.0" layoutY="96.0" prefHeight="36.0" prefWidth="284.0" promptText="Enter first name" />
+      <Label layoutX="137.0" layoutY="68.0" prefHeight="16.0" prefWidth="90.0" text="first-name" textFill="#9e9898">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastname" layoutX="488.0" layoutY="94.0" prefHeight="36.0" prefWidth="307.0" promptText="Enter last name" AnchorPane.bottomAnchor="454.0" AnchorPane.leftAnchor="488.0" AnchorPane.rightAnchor="185.0" AnchorPane.topAnchor="94.0" />
+      <Label layoutX="488.0" layoutY="66.0" text="last-name" textFill="#9e9898" AnchorPane.bottomAnchor="502.0" AnchorPane.leftAnchor="488.0" AnchorPane.rightAnchor="426.0" AnchorPane.topAnchor="66.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="amountPaid" editable="false" layoutX="597.0" layoutY="178.0" opacity="0.59" prefHeight="36.0" prefWidth="197.0" promptText="amount" text="12" />
+      <Label layoutX="488.0" layoutY="155.0" text="amount paid" textFill="#9e9898">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="paidby" layoutX="488.0" layoutY="179.0" prefHeight="34.0" prefWidth="100.0" promptText="Paid By" />
+      <Label layoutX="496.0" layoutY="232.0" text="Gender" textFill="#9e9898">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="male" layoutX="520.0" layoutY="267.0" text="Male" textFill="#2eb5cd">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <selectedColor>
+            <Color red="0.0117647061124444" green="0.9882352948188782" blue="0.7254902124404907" />
+         </selectedColor>
+         <unSelectedColor>
+            <Color red="0.5921568870544434" green="0.5529412031173706" blue="0.5529412031173706" />
+         </unSelectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="female" layoutX="653.0" layoutY="267.0" text="Female" textFill="#2eb5cd">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <selectedColor>
+            <Color red="0.0117647061124444" green="0.9882352948188782" blue="0.7254902124404907" />
+         </selectedColor>
+         <unSelectedColor>
+            <Color red="0.5921568870544434" green="0.5529412031173706" blue="0.5529412031173706" />
+         </unSelectedColor>
+      </JFXRadioButton>
+   </children>
+</AnchorPane>

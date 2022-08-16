@@ -1,0 +1,31 @@
+
+.dashboarPane {
+    -fx-pref-height: 626;
+    -fx-pref-width: 980;
+    -fx-background-image: url('../images/bgImage.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 980 626;
+
+    -fx-background-position: center center;
+}
+
+.topPane {
+    -fx-background-color: black;
+    -fx-pref-height: 626;
+    -fx-pref-width: 980;
+    -fx-opacity: 0.75;
+}
+
+.search-btn {
+    -fx-background-color: #03fcb9;
+    -fx-pref-height: 36;
+    -fx-pref-width: 109;
+    -fx-font-size: 14;
+    -fx-font-family: "Roboto Light";
+}
+
+.title {
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+}

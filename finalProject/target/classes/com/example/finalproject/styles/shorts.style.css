@@ -1,0 +1,6 @@
+.shortPane {
+    -fx-background-image: url('../images/shorts.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 424 571;
+    -fx-background-position: center center;
+}

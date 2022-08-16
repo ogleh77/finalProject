@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="20.0" styleClass="splashScreenPane" stylesheets="@../styles/splashStyle.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.controllers.SplashScreen">
+   <children>
+      <Circle fill="DODGERBLUE" radius="53.0" stroke="BLACK" strokeType="INSIDE">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </Circle>
+      <Label styleClass="userName" text="Mohamed Ogleh">
+         <VBox.margin>
+            <Insets top="-12.0" />
+         </VBox.margin>
+      </Label>
+      <JFXButton onAction="#swipeHandler" prefHeight="51.0" prefWidth="306.0" styleClass="btnSwipe" text="Click me to swipe" />
+      <JFXButton prefHeight="61.0" styleClass="btnCancel" text="Logout" />
+      <ProgressBar prefHeight="30.0" prefWidth="503.0" progress="0.0">
+         <VBox.margin>
+            <Insets top="80.0" />
+         </VBox.margin>
+      </ProgressBar>
+   </children>
+</VBox>

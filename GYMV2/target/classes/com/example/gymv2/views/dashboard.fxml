@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane styleClass="dashboard-pane" stylesheets="@../styles/dashboard.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gymv2.controllers.DashboardController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <HBox alignment="TOP_CENTER" spacing="330.0" styleClass="top" BorderPane.alignment="TOP_LEFT">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="41.0" prefWidth="323.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="menuPane" fitHeight="26.0" fitWidth="28.0" onMouseClicked="#openSideHandler" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/icons8_Menu_24px_1.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="gym-title" text="TOGDHEER FITNESS CENTER" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="397.0" spacing="10.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="216.0" spacing="10.0">
+                           <children>
+                              <Circle fill="DODGERBLUE" radius="19.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Label text="Mohamed Ogleh" textFill="#f5ecec">
+                                 <font>
+                                    <Font name="Arial Black" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefWidth="40.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/icons8_subtract_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefWidth="40.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/icons8_maximize_button_24px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefWidth="40.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/icons8_circled_x_24px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="header" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <VBox fx:id="sidePane" alignment="CENTER" prefHeight="621.0" prefWidth="77.0" spacing="10.0" styleClass="side-pane" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton onAction="#homeOpenHandler" styleClass="menu-btns" text="-">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../finalProject/src/main/resources/com/example/finalproject/icons/icons8_home_50px_2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <MenuButton mnemonicParsing="false" popupSide="RIGHT" styleClass="menu-btns" stylesheets="@../../../../../../../../finalProject/src/main/resources/com/example/finalproject/styles/homeStyle.css">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#monthlyRegHandler" text="Monthly Registration" />
+                        <MenuItem mnemonicParsing="false" onAction="#shortlyRegHandler" text="Shortly Registration" />
+                     </items>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../finalProject/src/main/resources/com/example/finalproject/icons/icons8_registration_30px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuButton>
+                  <StackPane>
+                     <children>
+                        <JFXButton styleClass="menu-btns" text="-">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../finalProject/src/main/resources/com/example/finalproject/icons/icons8_notification_center_32px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Circle fx:id="notiCircle" fill="#03fcb9" radius="9.0" stroke="#03fcb9" strokeType="INSIDE">
+                           <StackPane.margin>
+                              <Insets left="15.0" top="-14.0" />
+                           </StackPane.margin>
+                        </Circle>
+                        <Label fx:id="notiCount" text="2+">
+                           <font>
+                              <Font name="Arial" size="10.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets left="16.0" top="-13.0" />
+                           </StackPane.margin>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <JFXButton styleClass="menu-btns" text="-">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../finalProject/src/main/resources/com/example/finalproject/icons/icons8_chart_24px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton styleClass="menu-btns" text="-">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../finalProject/src/main/resources/com/example/finalproject/icons/icons8_user_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton styleClass="menu-btns" text="-">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../finalProject/src/main/resources/com/example/finalproject/icons/icons8_settings_30px_2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="100.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</StackPane>

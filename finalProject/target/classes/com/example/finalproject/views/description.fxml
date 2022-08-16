@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="424.0" styleClass="shortPane" stylesheets="@../styles/shorts.style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="90.0" layoutY="77.0" text="First name" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="77.0" text="Mohamed" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="103.0" text="last name" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="103.0" text="Ali" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="131.0" text="phone" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="131.0" text="46476" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="162.0" text="gender" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="162.0" text="Male" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="192.0" text="shift" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="192.0" text="Afternoon" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="221.0" text="paid" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="221.0" text="\$20.0" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="253.0" text="discount amount" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="253.0" text="\$1.0" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="280.0" text="paidby" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="260.0" layoutY="280.0" text="eDahab" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="309.0" text="poxing" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="309.0" text="true" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="339.0" text="who added" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="265.0" layoutY="339.0" text="Bashka" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="90.0" layoutY="387.0" prefHeight="36.0" prefWidth="109.0" style="-fx-background-color: #042B48;" text="Edit" textFill="#f2f2f2">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXButton>
+      <HBox alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="424.0" spacing="290.0" style="-fx-background-color: #042B48;">
+         <children>
+            <Label text="Descriptions" textFill="#dad7d7">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_circled_x_24px_1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <ImageView fitHeight="75.0" fitWidth="93.0" layoutX="242.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/27796e0eb8742d4465f6fb3ffac420d4.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="82.0" layoutY="452.0" text="If the part of the information is incorrect click edit" textFill="#03fcb9">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <DropShadow height="59.1" radius="27.585" spread="0.01" width="53.24" />
+   </effect>
+</AnchorPane>
